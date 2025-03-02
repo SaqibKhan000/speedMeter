@@ -9,79 +9,11 @@ body{
     width: 100%;
 }
 
-
-/* nav-section-start -------- */
-.head{
-    background-color: rgba(255, 255, 255, 0.701);
-    backdrop-filter: blur(10px);
-    width: 100vw;
-}
-.head nav .over{
-    background-color: rgb(255, 255, 255);
-}
-nav{
-height: 80px;
-background-color: white;
-}
-nav .navbar-brand i{
-   color: rgb(166, 10, 166);
-   margin-left: 40px;
-}
-nav .navbar-brand span{
-    color: rgb(72, 3, 72);
-    font-weight: 800;
-   margin-left: 10px;
-   letter-spacing: 1px;
-}
-nav ul li a{
-    color: rgb(72, 3, 72) !important;
-    font-weight: 600;
-    font-size: 17px;
-    margin: 0 16px;
-}
-nav ul li a:hover{
-    color: rgb(143, 7, 143) !important;
-}
-nav .btn{
-  width: 80px;
-  font-weight: 500;
-  transition: all .3s ease-in-out;
-}
-nav .btn1{
-    color: rgb(72, 3, 72);
-}
-nav .btn2{
-    color: white;
-    background: linear-gradient(50deg, rgb(29, 147, 186), rgb(205, 63, 205));
-}
-nav .btn:active{
-    scale: .9;
-}
-nav .btn2:hover{
-  background: linear-gradient(50deg, rgb(12, 120, 156), rgb(148, 22, 148));
-  color: white;
-}
-nav .btn:focus{
-    box-shadow: none;
-}
-nav .btn1{
-    background-color: rgb(246, 242, 232);
-}
-nav .btn1:hover{
-    border: 1px solid rgb(72, 3, 72);
-}
-/* nav-section-end -------- */
-
-
-
-
-
-
 /* hero-section-start ------ */
 
 .hero{
     width: 100%;
-    margin-top: 110px;
+    margin-top: -50px;
 }
 .hero .cornerColor{
     width: 400px;
@@ -153,18 +85,22 @@ nav .btn1:hover{
    border-radius: 50%;
 }
 .hero .progress-value{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .hero .progress-value .needle{
-    width: 150px;
-    height: 250px;
-    clip-path: polygon(50% 0, 60% 50%, 50% 100%, 40% 50%);
-    background-color: rgb(80, 2, 80);
-    z-index: 100;
-    transform-origin: right center;
+    position: absolute;
+    width: 200px; /* Length of needle */
+    height: 20px; /* Thickness */
+    background: linear-gradient(to right, rgb(61, 2, 67), rgba(255, 255, 255, 0.071)); /* Fading effect */
+    transform-origin: center center;
 }
+
 .hero .spinner span{
     position: absolute;
     z-index: 100;
@@ -322,8 +258,11 @@ nav .btn1:hover{
     right: 135px;
     bottom: 127px;
 }
-/* .hero .num-values{
-} */
+.hero .num-values{
+    position: absolute;
+    top: -50px;
+    left: -30px;
+}
 .hero .num-values h2{
     position: absolute;
     top: 20px;
@@ -340,5 +279,4 @@ nav .btn1:hover{
     font-size: 40px;
     font-weight: 700;
 }
-
 /* hero-section-end ------ */
