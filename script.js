@@ -15,10 +15,10 @@ let progress = setInterval(() => {
         rgb(252, 35, 6) ${progressStartValue + 40}deg,
         rgb(229, 229, 12) ${progressStartValue * 3}deg,
         rgb(69, 230, 69) ${progressStartValue * 3.3}deg,
-        rgb(239, 235, 235) ${progressStartValue}deg 360deg
+        rgb(255, 255, 255) ${progressStartValue}deg 360deg
     )`;
 
-    progressValue.style.rotate = `${progressStartValue * 2.8}deg`;
+    progressValue.style.rotate = `${progressStartValue * 3.4}deg`;
     progressNums.innerHTML = progressStartValue * 2;
 
     if (progressStartValue === progressEndValue) {
