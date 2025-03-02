@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* nav-section-start -------- */
+.head{
+    background-color: rgba(255, 255, 255, 0.701);
+    backdrop-filter: blur(10px);
+    width: 100vw;
+}
+.head nav .over{
+    background-color: rgb(255, 255, 255);
+}
+nav{
+height: 80px;
+background-color: white;
+}
+nav .navbar-brand i{
+   color: rgb(166, 10, 166);
+   margin-left: 40px;
+}
+nav .navbar-brand span{
+    color: rgb(72, 3, 72);
+    font-weight: 800;
+   margin-left: 10px;
+   letter-spacing: 1px;
+}
+nav ul li a{
+    color: rgb(72, 3, 72) !important;
+    font-weight: 600;
+    font-size: 17px;
+    margin: 0 16px;
+}
+nav ul li a:hover{
+    color: rgb(143, 7, 143) !important;
+}
+nav .btn{
+  width: 80px;
+  font-weight: 500;
+  transition: all .3s ease-in-out;
+}
+nav .btn1{
+    color: rgb(72, 3, 72);
+}
+nav .btn2{
+    color: white;
+    background: linear-gradient(50deg, rgb(29, 147, 186), rgb(205, 63, 205));
+}
+nav .btn:active{
+    scale: .9;
+}
+nav .btn2:hover{
+  background: linear-gradient(50deg, rgb(12, 120, 156), rgb(148, 22, 148));
+  color: white;
+}
+nav .btn:focus{
+    box-shadow: none;
+}
+nav .btn1{
+    background-color: rgb(246, 242, 232);
+}
+nav .btn1:hover{
+    border: 1px solid rgb(72, 3, 72);
+}
+/* nav-section-end -------- */
+
+
+
+
+
+
+/* hero-section-start ------ */
+
+.hero{
+    width: 100%;
+    margin-top: 110px;
+}
+.hero .cornerColor{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: -60px;
+    top: 100px;
+    box-shadow: 0px 0px 30px 20px rgba(0, 255, 255, 0.879);
+    background-color: rgba(0, 255, 255, 0.655);
+    backdrop-filter: blur(100px);
+    border-radius: 50%;
+    z-index: -2;
+    opacity: .1;
+}
+.hero .oCornerColor{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 255, 255, 0.879);
+    box-shadow: 0px 0px 30px 20px rgba(0, 255, 255, 0.879);
+    backdrop-filter: blur(100px);
+    border-radius: 50%;
+    z-index: -2;
+    opacity: .1;
+}
+.hero .meter1{
+    width: 40%;
+    position: absolute;
+   opacity: .1;
+   rotate: -20deg;
+   left: -80px;
+   top: 100px;
+}
+.hero h1{
+    color: rgba(0, 0, 0, 0.805);
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    margin-top: 100px;
+}
+.hero .spinner{
+    width: 500px;
+   height: 580px;
+   padding: 50px 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+   position: relative;
+}
+.hero .circular-progress{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    rotate: 215deg;
+}
+.hero .circular-progress::before{
+    content: "";
+    width: 85%;
+    height: 85%;
+    position: absolute;
+   background-color: white;
+   border-radius: 50%;
+}
+.hero .progress-value{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero .progress-value img{
+    z-index: 100;
+    width: 70%;
+    position: relative;
+}
+.hero .spinner span{
+    position: absolute;
+    z-index: 100;
+}
+.hero .spinner .num1{
+    left: 60px;
+    bottom: 100px;
+    font-size: 30px;
+    color: rgb(125, 121, 121);
+    font-weight: 700;
+}
+.hero .spinner .num2{
+    left: 0px;
+    bottom: 200px;
+    font-size: 27px;
+    color: rgb(125, 121, 121);
+    font-weight: 700;
+}
+.hero .spinner .num3{
+    left: -8px;
+    bottom: 340px;
+    font-size: 27px;
+    color: rgb(125, 121, 121);
+    font-weight: 700;
+}
+.hero .spinner .num4{
+    left: 65px;
+    top: 80px;
+    font-size: 27px;
+    color: rgb(125, 121, 121);
+    font-weight: 700;
+}
+.hero .spinner .num5{
+    left: 230px;
+    top: 25px;
+    font-size: 24px;
+    color: rgb(125, 121, 121);
+    font-weight: 700;
+}
+.hero .spinner .num6{
+    right: 60px;
+    top: 75px;
+    font-size: 24px;
+    color: rgb(125, 121, 121);
+    font-weight: 700;
+}
+.hero .spinner .num7{
+    right: -15px;
+    top: 200px;
+    font-size: 24px;
+    color: rgb(125, 121, 121);
+    font-weight: 700;
+}
+.hero .spinner .num8{
+    right: -15px;
+    bottom: 210px;
+    font-size: 24px;
+    color: rgb(125, 121, 121);
+    font-weight: 700;
+}
+.hero .spinner .num9{
+    right: 40px;
+    bottom: 100px;
+    font-size: 24px;
+    color: rgb(125, 121, 121);
+    font-weight: 700;
+}
+
+
+.hero .spinner p{
+    width: 8px;
+    height: 8px;
+    background-color: rgba(128, 128, 128, 0.84);
+    position: absolute;
+    border-radius: 50%;
+    z-index: 2000;
+}
+.hero .spinner .dot1{
+    position: absolute;
+    left: 130px;
+    bottom: 140px;
+}
+.hero .spinner .dot2{
+    position: absolute;
+    left: 98px;
+    bottom: 180px;
+}
+.hero .spinner .dot3{
+    position: absolute;
+    left: 75px;
+    bottom: 230px;
+}
+.hero .spinner .dot4{
+    position: absolute;
+    left: 70px;
+    bottom: 280px;
+}
+.hero .spinner .dot5{
+    position: absolute;
+    left: 85px;
+    bottom: 340px;
+}
+.hero .spinner .dot6{
+    position: absolute;
+    left: 120px;
+    bottom: 390px;
+}
+.hero .spinner .dot7{
+    position: absolute;
+    left: 170px;
+    top: 130px;
+}
+.hero .spinner .dot8{
+    position: absolute;
+    left: 230px;
+    top: 113px;
+}
+.hero .spinner .dot9{
+    position: absolute;
+    left: 300px;
+    top: 120px;
+}
+.hero .spinner .dot10{
+    position: absolute;
+    right: 130px;
+    top: 150px;
+}
+.hero .spinner .dot11{
+    position: absolute;
+    right: 85px;
+    top: 205px;
+}
+.hero .spinner .dot11{
+    position: absolute;
+    right: 83px;
+    top: 210px;
+}
+.hero .spinner .dot12{
+    position: absolute;
+    right: 68px;
+    top: 280px;
+}
+.hero .spinner .dot13{
+    position: absolute;
+    right: 75px;
+    bottom: 220px;
+}
+.hero .spinner .dot14{
+    position: absolute;
+    right: 100px;
+    bottom: 164px;
+}
+.hero .spinner .dot15{
+    position: absolute;
+    right: 135px;
+    bottom: 127px;
+}
+/* .hero .num-values{
+} */
+.hero .num-values h2{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    rotate: 145deg;
+    font-size: 80px;
+    font-weight: 700;
+}
+.hero .num-values span{
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    rotate: 145deg;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* hero-section-end ------ */
