@@ -15,32 +15,6 @@ body{
     width: 100%;
     margin-top: -50px;
 }
-.hero .cornerColor{
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    left: -60px;
-    top: 100px;
-    box-shadow: 0px 0px 30px 20px rgba(0, 255, 255, 0.879);
-    background-color: rgba(0, 255, 255, 0.655);
-    backdrop-filter: blur(100px);
-    border-radius: 50%;
-    z-index: -2;
-    opacity: .1;
-}
-.hero .oCornerColor{
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    background-color: rgba(0, 255, 255, 0.879);
-    box-shadow: 0px 0px 30px 20px rgba(0, 255, 255, 0.879);
-    backdrop-filter: blur(100px);
-    border-radius: 50%;
-    z-index: -2;
-    opacity: .1;
-}
 .hero .meter1{
     width: 40%;
     position: absolute;
@@ -74,7 +48,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    rotate: 215deg;
+    rotate: 200deg;
 }
 .hero .circular-progress::before{
     content: "";
@@ -265,11 +239,6 @@ body{
     right: 100px;
     bottom: 164px;
 }
-.hero .spinner .dot15{
-    position: absolute;
-    right: 135px;
-    bottom: 127px;
-}
 .hero .num-values{
     position: absolute;
     top: -50px;
@@ -279,26 +248,26 @@ body{
     position: absolute;
     top: 50px;
     left: 80px;
-    rotate: 145deg;
+    rotate: 160deg;
     font-size: 90px;
     font-weight: 700;
 }
 .hero .num-values h2::before{
     content: "";
-    width: 35vh;
+    width: 28vh;
     height: 30vh;
     position: absolute;
     top: -60px;
-    right: -70px;
+    right: -20px;
     background-color: rgb(255, 255, 255);
     z-index: -5;
     /* rotate: 7deg; */
 }
 .hero .num-values span{
     position: absolute;
-    top: 20px;
-    left: 60px;
-    rotate: 145deg;
+    top: 0px;
+    left: 80px;
+    rotate: 160deg;
     font-size: 40px;
     font-weight: 700;
 }
