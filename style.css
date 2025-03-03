@@ -92,15 +92,27 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1000000000000000000000000000000 !important;
 }
 .hero .progress-value .needle{
     position: absolute;
-    width: 200px; /* Length of needle */
+    width: 300px; /* Length of needle */
     height: 20px; /* Thickness */
-    background: linear-gradient(to right, rgb(61, 2, 67), rgba(255, 255, 255, 0.071)); /* Fading effect */
+    background: linear-gradient(to right, rgb(47, 1, 52), rgba(255, 255, 255, 0)); /* Fading effect */
     transform-origin: center center;
+    position: relative;
 }
+.hero .progress-value .needle::before{
+    content: "";
+    width: 45%;
+    height: 5vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 20px white;
+    position: absolute;
+    top: -10px;
+    right: 0;
 
+}
 .hero .spinner span{
     position: absolute;
     z-index: 100;
@@ -265,16 +277,27 @@ body{
 }
 .hero .num-values h2{
     position: absolute;
-    top: 20px;
-    left: 50px;
+    top: 50px;
+    left: 80px;
     rotate: 145deg;
-    font-size: 80px;
+    font-size: 90px;
     font-weight: 700;
+}
+.hero .num-values h2::before{
+    content: "";
+    width: 35vh;
+    height: 30vh;
+    position: absolute;
+    top: -60px;
+    right: -70px;
+    background-color: rgb(255, 255, 255);
+    z-index: -5;
+    /* rotate: 7deg; */
 }
 .hero .num-values span{
     position: absolute;
-    top: -5px;
-    left: 10px;
+    top: 20px;
+    left: 60px;
     rotate: 145deg;
     font-size: 40px;
     font-weight: 700;
