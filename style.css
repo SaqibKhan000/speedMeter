@@ -7,13 +7,14 @@
 body{
     height: 100vh;
     width: 100%;
+    background-color: rgb(255, 255, 255);
 }
 
 /* hero-section-start ------ */
 
 .hero{
     width: 100%;
-    margin-top: -50px;
+    margin-top: 60px;
 }
 .hero .meter1{
     width: 40%;
@@ -55,7 +56,7 @@ body{
     width: 85%;
     height: 85%;
     position: absolute;
-   background-color: white;
+   background-color: rgb(255, 255, 255);
    border-radius: 50%;
 }
 .hero .progress-value{
@@ -68,45 +69,26 @@ body{
     justify-content: center;
     z-index: 1000000000000000000000000000000 !important;
 }
-.hero .progress-value .needle{
-    position: absolute;
-    width: 300px; /* Length of needle */
-    height: 20px; /* Thickness */
-    background: linear-gradient(to right, rgb(47, 1, 52), rgba(255, 255, 255, 0)); /* Fading effect */
-    transform-origin: center center;
-    position: relative;
-}
-.hero .progress-value .needle::before{
-    content: "";
-    width: 45%;
-    height: 5vh;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 20px 20px white;
-    position: absolute;
-    top: -10px;
-    right: 0;
-
-}
 .hero .spinner span{
     position: absolute;
     z-index: 100;
 }
 .hero .spinner .num1{
-    left: 60px;
+    left: 0px;
     bottom: 100px;
     font-size: 30px;
     color: rgb(125, 121, 121);
     font-weight: 700;
 }
 .hero .spinner .num2{
-    left: 0px;
+    left: -40px;
     bottom: 200px;
     font-size: 27px;
     color: rgb(125, 121, 121);
     font-weight: 700;
 }
 .hero .spinner .num3{
-    left: -8px;
+    left: -19px;
     bottom: 340px;
     font-size: 27px;
     color: rgb(125, 121, 121);
@@ -114,41 +96,41 @@ body{
 }
 .hero .spinner .num4{
     left: 65px;
-    top: 80px;
+    top: 88px;
     font-size: 27px;
     color: rgb(125, 121, 121);
     font-weight: 700;
 }
 .hero .spinner .num5{
     left: 230px;
-    top: 25px;
+    top: 35px;
     font-size: 24px;
     color: rgb(125, 121, 121);
     font-weight: 700;
 }
 .hero .spinner .num6{
-    right: 60px;
+    right: 68px;
     top: 75px;
     font-size: 24px;
     color: rgb(125, 121, 121);
     font-weight: 700;
 }
 .hero .spinner .num7{
-    right: -15px;
+    right: -30px;
     top: 200px;
     font-size: 24px;
     color: rgb(125, 121, 121);
     font-weight: 700;
 }
 .hero .spinner .num8{
-    right: -15px;
+    right: -48px;
     bottom: 210px;
     font-size: 24px;
     color: rgb(125, 121, 121);
     font-weight: 700;
 }
 .hero .spinner .num9{
-    right: 40px;
+    right: -10px;
     bottom: 100px;
     font-size: 24px;
     color: rgb(125, 121, 121);
@@ -166,109 +148,120 @@ body{
 }
 .hero .spinner .dot1{
     position: absolute;
-    left: 130px;
+    left: 90px;
     bottom: 140px;
 }
 .hero .spinner .dot2{
     position: absolute;
-    left: 98px;
-    bottom: 180px;
+    left: 65px;
+    bottom: 200px;
 }
 .hero .spinner .dot3{
     position: absolute;
-    left: 75px;
-    bottom: 230px;
+    left: 60px;
+    bottom: 260px;
 }
 .hero .spinner .dot4{
     position: absolute;
-    left: 70px;
-    bottom: 280px;
+    left: 75px;
+    bottom: 310px;
 }
 .hero .spinner .dot5{
     position: absolute;
-    left: 85px;
-    bottom: 340px;
+    left: 105px;
+    bottom: 360px;
 }
 .hero .spinner .dot6{
     position: absolute;
-    left: 120px;
-    bottom: 390px;
+    left: 150px;
+    bottom: 400px;
 }
 .hero .spinner .dot7{
     position: absolute;
-    left: 170px;
-    top: 130px;
+    left: 210px;
+    top: 135px;
 }
 .hero .spinner .dot8{
     position: absolute;
-    left: 230px;
-    top: 113px;
+    left: 270px;
+    top: 132px;
 }
 .hero .spinner .dot9{
     position: absolute;
-    left: 300px;
-    top: 120px;
+    left: 330px;
+    top: 147px;
 }
 .hero .spinner .dot10{
     position: absolute;
-    right: 130px;
-    top: 150px;
+    right: 110px;
+    top: 190px;
 }
 .hero .spinner .dot11{
     position: absolute;
-    right: 85px;
-    top: 205px;
-}
-.hero .spinner .dot11{
-    position: absolute;
-    right: 83px;
-    top: 210px;
+    right: 75px;
+    top: 240px;
 }
 .hero .spinner .dot12{
     position: absolute;
-    right: 68px;
-    top: 280px;
+    right: 60px;
+    top: 300px;
 }
 .hero .spinner .dot13{
     position: absolute;
-    right: 75px;
-    bottom: 220px;
+    right: 65px;
+    bottom: 200px;
 }
 .hero .spinner .dot14{
     position: absolute;
-    right: 100px;
-    bottom: 164px;
+    right: 87px;
+    bottom: 144px;
 }
-.hero .num-values{
-    position: absolute;
-    top: -50px;
-    left: -30px;
+@media screen and (max-width: 580px){
+    .hero .spinner .num2{
+     display: none;
+    }
+    .hero .spinner .num3{
+     display: none;
+    }
+    .hero .spinner .num4{
+     display: none;
+    }
+    .hero .spinner .num6{
+     display: none;
+    }
+    .hero .spinner .num7{
+     display: none;
+    }
+    .hero .spinner .num8{
+     display: none;
+    }
 }
-.hero .num-values h2{
+canvas{
+    width: 50vw;
+}
+.needle{
+    width: 300px; /* Length of needle */
+    height: 20px; /* Thickness */
+    background: linear-gradient(to right, rgb(47, 1, 52), rgba(255, 255, 255, 0) 55%); /* Fading effect */
+    transform-origin: center center;
     position: absolute;
-    top: 50px;
-    left: 80px;
-    rotate: 160deg;
-    font-size: 90px;
+    rotate: -30deg;
+    transform-origin: bottom center;
+}
+.num-values{
+    position: absolute;
+    bottom: 35px;
+    text-align: center;
+}
+.num-values h2{
+    font-size: 100px;
+}
+.num-values h2::before{
+    content: "mbps";
+    font-size: 50px;
     font-weight: 700;
-}
-.hero .num-values h2::before{
-    content: "";
-    width: 28vh;
-    height: 30vh;
-    position: absolute;
-    top: -60px;
-    right: -20px;
-    background-color: rgb(255, 255, 255);
-    z-index: -5;
-    /* rotate: 7deg; */
-}
-.hero .num-values span{
-    position: absolute;
-    top: 0px;
-    left: 80px;
-    rotate: 160deg;
-    font-size: 40px;
-    font-weight: 700;
+   position: absolute;
+   bottom: -30px;
+  left: 15px;
 }
 /* hero-section-end ------ */
