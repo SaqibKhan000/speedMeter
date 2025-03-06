@@ -66,11 +66,11 @@
                 <script>
                     const ctx = document.getElementById('speedometer').getContext('2d');
 
-                    const gradient = ctx.createLinearGradient(0, 0, 400, 0);
-                    gradient.addColorStop(0, '#c408c4');
-                    gradient.addColorStop(0, '#c408c4');
-                    gradient.addColorStop(0.2, '#FFC300');
-                    gradient.addColorStop(1, '#33F527');
+                    const gradient = ctx.createLinearGradient(0, 0, 500, 0); // Creates a horizontal gradient from x=0 to x=200
+gradient.addColorStop(0, '#e206e2');    // Purple at the start (0)
+gradient.addColorStop(0.5, '#ffa500');  // Orange in the middle (0.5)
+gradient.addColorStop(0.6, '#f77343');  // Red-orange a bit further (0.8)
+gradient.addColorStop(.8, '#4bf34b');
 
                     const speedometer = new Chart(ctx, {
                         type: 'doughnut',
